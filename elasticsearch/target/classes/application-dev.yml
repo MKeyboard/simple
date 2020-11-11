@@ -1,0 +1,50 @@
+spring:
+    datasource:
+        type: com.alibaba.druid.pool.DruidDataSource
+        druid:
+            first:
+                url: jdbc:sqlserver://10.112.32.166:1433;databaseName=activity
+                username: sa
+                password: Clic_4321!!
+                driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
+            second:
+                url: jdbc:sqlserver://10.112.32.166:1433;databaseName=activity
+                username: sa
+                password: Clic_4321!!
+                driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
+            initial-size: 10
+            max-active: 100
+            min-idle: 10
+            max-wait: 60000
+            pool-prepared-statements: true
+            max-pool-prepared-statement-per-connection-size: 20
+            time-between-eviction-runs-millis: 60000
+            min-evictable-idle-time-millis: 300000
+            #Oracle需要打开注释
+            #validation-query: SELECT 1 FROM DUAL
+            test-while-idle: true
+            test-on-borrow: false
+            test-on-return: false
+            stat-view-servlet:
+                enabled: true
+                url-pattern: /druid/*
+                #login-username: admin
+                #login-password: admin
+            filter:
+                stat:
+                    log-slow-sql: true
+                    slow-sql-millis: 1000
+                    merge-sql: false
+                wall:
+                    config:
+                        multi-statement-allow: true
+    data:
+        elasticsearch:
+            repositories:
+                enabled: true
+            cluster-nodes: 127.0.0.1:9300 # es的连接地址及端口号
+            cluster-name: elasticsearch # es集群的名称
+
+#是否swagger 开发测试开启，生产关
+swagger:
+    enable: true

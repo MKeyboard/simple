@@ -1,0 +1,15 @@
+com\cmschina\elasticsearch\datasource\DataSourceNames.class
+com\cmschina\elasticsearch\datasource\DynamicDataSource.class
+com\cmschina\elasticsearch\service\EsAccountService.class
+com\cmschina\elasticsearch\entity\document\EsAccount.class
+com\cmschina\elasticsearch\rest\EsAccountRest.class
+com\cmschina\elasticsearch\service\impl\EsAccountServiceImpl.class
+com\cmschina\elasticsearch\dao\EsAccountDao.class
+com\cmschina\elasticsearch\utils\BaseData.class
+com\cmschina\elasticsearch\config\SwaggerConfig.class
+com\cmschina\elasticsearch\common\RRException.class
+com\cmschina\elasticsearch\datasource\annotation\DataSource.class
+com\cmschina\elasticsearch\entity\repository\EsAccountRepository.class
+com\cmschina\elasticsearch\datasource\aspect\DataSourceAspect.class
+com\cmschina\elasticsearch\datasource\DynamicDataSourceConfig.class
+com\cmschina\elasticsearch\ElasticsearchApplication.class

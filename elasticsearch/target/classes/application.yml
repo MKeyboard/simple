@@ -1,0 +1,13 @@
+server:
+  port: 20000
+  servlet:
+    context-path: /elasticsearch
+
+spring:
+  profiles:
+    active: dev
+
+mybatis:
+  mapper-locations:
+     classpath: mapper/*.xml
+
