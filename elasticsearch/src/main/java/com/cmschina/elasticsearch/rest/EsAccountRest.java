@@ -4,7 +4,6 @@ import com.cmschina.elasticsearch.entity.document.EsAccount;
 import com.cmschina.elasticsearch.entity.repository.EsAccountRepository;
 import com.cmschina.elasticsearch.service.EsAccountService;
 import com.cmschina.elasticsearch.utils.BaseData;
-import com.cmschina.elasticsearch.service.EsAccountService;
 import com.google.common.collect.Maps;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
