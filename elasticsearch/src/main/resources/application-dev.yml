@@ -3,12 +3,12 @@ spring:
         type: com.alibaba.druid.pool.DruidDataSource
         druid:
             first:
-                url: jdbc:sqlserver://10.112.32.166:1433;databaseName=activity
+                url: jdbc:sqlserver://127.0.0.1:1433;databaseName=activity
                 username: sa
                 password: Clic_4321!!
                 driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
             second:
-                url: jdbc:sqlserver://10.112.32.166:1433;databaseName=activity
+                url: jdbc:sqlserver://127.0.0.1:1433;databaseName=activity
                 username: sa
                 password: Clic_4321!!
                 driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
