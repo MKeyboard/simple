@@ -1,0 +1,13 @@
+server:
+  port: 20001
+  servlet:
+    context-path: /rabbitmq
+
+spring:
+  profiles:
+    active: dev
+
+mybatis:
+  mapper-locations:
+     classpath: mapper/*.xml
+
